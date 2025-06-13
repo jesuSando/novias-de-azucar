@@ -353,3 +353,110 @@ footer {
     color: #3f2b5b;
     text-decoration: none;
 }
+
+footer a {
+    color: #3f2b5b !important;
+    text-decoration: none !important;
+}
+
+footer a:hover {
+    color: #3f2b5b !important;
+    text-decoration: underline !important;
+}
+
+@media (max-width: 1200px) {
+    .navbar, section, footer {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .descripcion-investigadores, .descripcion-ficha, 
+    .decripcion-reflexion, .header-proceso {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar, section, footer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .descripcion-investigadores, .descripcion-ficha, 
+    .decripcion-reflexion, .header-proceso {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .contenedor-about {
+        flex-direction: column;
+    }
+    
+    .inspiracion, .mundo, .personaje-especifico, 
+    .laboratorio, .protagonista {
+        flex-direction: column;
+    }
+    
+    .personas-ficha, .integrantes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contenedor-misiones {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        position: relative;
+    }
+    
+    .navbar ul {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .navbar li {
+        margin: 5px 10px;
+    }
+    
+    section {
+        padding: 80px 30px 30px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .personas-ficha, .integrantes {
+        grid-template-columns: 1fr;
+    }
+    
+    .descripcion-investigadores, .descripcion-ficha, 
+    .decripcion-reflexion, .header-proceso {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .contenedor-foto img {
+        height: auto;
+    }
+    
+    footer {
+        padding: 30px;
+    }
+    
+    .footer-section {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+}
